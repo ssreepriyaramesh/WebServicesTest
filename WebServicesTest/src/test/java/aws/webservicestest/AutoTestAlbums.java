@@ -22,7 +22,7 @@ public class AutoTestAlbums {
 	}
 
 	@Test(priority = 2)
-	public void testPostPosts() {
+	public void testPostAlbums() {
 		RequestSpecification reqSpec = RestAssured.given();
 
 		reqSpec.header("Content-Type", "application/json");
@@ -43,7 +43,7 @@ public class AutoTestAlbums {
 	}
 
 	@Test(priority = 3)
-	public void testPutPosts() {
+	public void testPutAlbums() {
 		RequestSpecification reqSpec = RestAssured.given();
 
 		reqSpec.header("Content-Type", "application/json");

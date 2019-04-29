@@ -22,7 +22,7 @@ public class AutoTestUsers {
 	}
 
 	@Test(priority = 2)
-	public void testPostPosts() {
+	public void testPostUsers() {
 		RequestSpecification reqSpec = RestAssured.given();
 
 		reqSpec.header("Content-Type", "application/json");
@@ -44,7 +44,7 @@ public class AutoTestUsers {
 	}
 
 	@Test(priority = 3)
-	public void testPutPosts() {
+	public void testPutUsers() {
 		RequestSpecification reqSpec = RestAssured.given();
 
 		reqSpec.header("Content-Type", "application/json");

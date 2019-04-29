@@ -22,7 +22,7 @@ public class AutoTestComments {
 	}
 
 	@Test(priority = 2)
-	public void testPostPosts() {
+	public void testPostComments() {
 		RequestSpecification reqSpec = RestAssured.given();
 
 		reqSpec.header("Content-Type", "application/json");
@@ -45,7 +45,7 @@ public class AutoTestComments {
 	}
 
 	@Test(priority = 3)
-	public void testPutPosts() {
+	public void testPutComments() {
 		RequestSpecification reqSpec = RestAssured.given();
 
 		reqSpec.header("Content-Type", "application/json");
